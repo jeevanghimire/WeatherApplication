@@ -1,10 +1,10 @@
 # WeatherApplication
 
-<p align="left">
+<p align="middle">
   <img src="Screenshot1.png" alt="Screenshot 1">
 </p>
 
-<p align="right">
+<p align="middle">
   <img src="ScreenShot2.png" alt="Screenshot 2">
 </p>
 
