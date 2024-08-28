@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 @main
 struct WeatherApplicationApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(LocationManager())
         }
     }
 }

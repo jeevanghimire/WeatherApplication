@@ -8,8 +8,9 @@ import CoreLocation
 
 
 class LocationManager: NSObject , ObservableObject, CLLocationManagerDelegate {
+    
     let manager = CLLocationManager()
-    @Published var location = CLLocationCoordinate2D()
+    @Published var location = CLLocationCoordinate2D?(.init())
     @Published var isloading = false
     
     override init()
@@ -22,10 +23,10 @@ class LocationManager: NSObject , ObservableObject, CLLocationManagerDelegate {
         manager.requestLocation()
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.first?.coordinate else{
-            return print(Error.self);
-        }
-        isloading = false
+        if let firstLocation = locations.first {
+            location = firstLocation.coordinate
+                    isloading = false
+                }
         
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: any Error) {
