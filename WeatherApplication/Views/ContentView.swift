@@ -14,8 +14,9 @@ struct ContentView: View {
     var body: some View {
         VStack{
             if let location = locationManager.location{
-                if weather != nil{
+                if weather == nil{
                     WeatherView(weather:previewWeather)
+//                    WelcomeView()
                 }else{
                     LoadingView()
                         .task{

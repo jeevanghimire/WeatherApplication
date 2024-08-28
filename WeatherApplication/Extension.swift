@@ -1,11 +1,11 @@
 import Foundation
 import SwiftUI
 
-extension Double{
-    func roundDouble()->String{
-        return String(format:"%.0f,self")
-    }
-}
+//extension Double{
+//    func roundDouble()->String{
+//        return String(format:"%.0f,self")
+//    }
+//}
 
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
