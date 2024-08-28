@@ -1,12 +1,9 @@
+<p align="center">
+  <img src="Screenshot1.png" alt="Screenshot 1" width="400" height="800" style="display: inline-block; margin-right: 10px;">
+  <img src="ScreenShot2.png" alt="Screenshot 2" width="400" height="800" style="display: inline-block;">
+</p>
+
 # WeatherApplication
-
-<p align="middle">
-  <img src="Screenshot1.png" alt="Screenshot 1">
-</p>
-
-<p align="middle">
-  <img src="ScreenShot2.png" alt="Screenshot 2">
-</p>
 
 ## Overview
 
@@ -39,8 +36,11 @@ The `WeatherApplication` is a SwiftUI-based iOS application designed to display 
    ```sh
    git clone https://github.com/jeevanghimire/WeatherApplication.git
    cd WeatherApplication
+
+2. Add your API Key in weather manager add your api key
+   
 ``` swift
 guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=YOUR_API_KEY&units=metric") else {
     fatalError("Missing URL")
 }
-```
+
