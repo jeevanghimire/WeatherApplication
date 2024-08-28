@@ -11,6 +11,7 @@
 		D10A826D2C7F29CC0098ECA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A826C2C7F29CC0098ECA5 /* ContentView.swift */; };
 		D10A826F2C7F29CE0098ECA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10A826E2C7F29CE0098ECA5 /* Assets.xcassets */; };
 		D10A82722C7F29CE0098ECA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D10A82712C7F29CE0098ECA5 /* Preview Assets.xcassets */; };
+		D10A827A2C7F2CC40098ECA5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10A82792C7F2CC40098ECA5 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D10A826C2C7F29CC0098ECA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D10A826E2C7F29CE0098ECA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D10A82712C7F29CE0098ECA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D10A82792C7F2CC40098ECA5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,10 @@
 		D10A82692C7F29CC0098ECA5 /* WeatherApplication */ = {
 			isa = PBXGroup;
 			children = (
-				D10A826A2C7F29CC0098ECA5 /* WeatherApplicationApp.swift */,
+				D10A827B2C7F39710098ECA5 /* Views */,
 				D10A826C2C7F29CC0098ECA5 /* ContentView.swift */,
+				D10A82782C7F2C960098ECA5 /* Manager */,
+				D10A826A2C7F29CC0098ECA5 /* WeatherApplicationApp.swift */,
 				D10A826E2C7F29CE0098ECA5 /* Assets.xcassets */,
 				D10A82702C7F29CE0098ECA5 /* Preview Content */,
 			);
@@ -65,6 +69,21 @@
 				D10A82712C7F29CE0098ECA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D10A82782C7F2C960098ECA5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D10A82792C7F2CC40098ECA5 /* LocationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D10A827B2C7F39710098ECA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			files = (
 				D10A826D2C7F29CC0098ECA5 /* ContentView.swift in Sources */,
 				D10A826B2C7F29CC0098ECA5 /* WeatherApplicationApp.swift in Sources */,
+				D10A827A2C7F2CC40098ECA5 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +300,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +330,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
