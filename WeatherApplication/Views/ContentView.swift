@@ -14,13 +14,23 @@ struct ContentView: View {
     var body: some View {
         VStack{
             if let location = locationManager.location{
-                if let weather = weather{
-                    Text("Weather Data Fetched")
+                if weather != nil{
+                    WeatherView(weather:previewWeather)
                 }else{
                     LoadingView()
                         .task{
                             do{
                                 try await weather = weatherManager.getCurrentWeather(latitude:location.latitude,longitude: location.longitude)
+                                Task{
+                                    do {
+                                            let weatherData = try await weatherManager.getCurrentWeather(latitude: 28.6139, longitude: 77.2090)
+                                            
+                                            // Save the weather data to "WeatherData.json"
+                                            weatherManager.saveWeatherData(weatherData, to: "WeatherApplication/WeatherData.json")
+                                        } catch {
+                                            print("Error fetching weather data: \(error)")
+                                        }
+                                }
                             }
                             catch{
                                 print("Error Getting Weather \(error)")
