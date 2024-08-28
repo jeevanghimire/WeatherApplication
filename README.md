@@ -1,11 +1,11 @@
 # WeatherApplication
 
 <p align="left">
-  <img src="Screenshot1" alt="Screenshot 1">
+  <img src="Screenshot1.png" alt="Screenshot 1">
 </p>
 
 <p align="right">
-  <img src="ScreenShot2" alt="Screenshot 2">
+  <img src="ScreenShot2.png" alt="Screenshot 2">
 </p>
 
 ## Overview
