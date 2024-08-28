@@ -1,0 +1,44 @@
+{
+    "coord": {
+        "lon": 83.4484,
+        "lat": 27.7006
+    },
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "few clouds",
+            "icon": "02n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 299.5,
+        "feels_like": 299.5,
+        "temp_min": 299.5,
+        "temp_max": 299.5,
+        "pressure": 1006,
+        "humidity": 91,
+        "sea_level": 1006,
+        "grnd_level": 975
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.26,
+        "deg": 356,
+        "gust": 1.21
+    },
+    "clouds": {
+        "all": 18
+    },
+    "dt": 1724860036,
+    "sys": {
+        "country": "NP",
+        "sunrise": 1724803401,
+        "sunset": 1724849516
+    },
+    "timezone": 20700,
+    "id": 1283562,
+    "name": "Butwāl",
+    "cod": 200
+}
